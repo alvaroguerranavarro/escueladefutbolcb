@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CB Fútbol | Escuela de Formación</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Estilo de la página -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <div id="promo-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <div class="modal-body">
+                <span>⚽ ¡PROXIMAMENTE - TORNEO DE VERANO! ⚽</span>
+                <h2>Del 29 Marzo al 1 Abril</h2>
+                <p>Acompañanos, te esperemos.</p>
+                <a href="#link-evento" class="cta-button">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación -->
+    <nav id="navbar">
+        <div class="logo-box">
+            <img src="img/image_1.png" alt="Escudo Club Deportivo Escuela de Fútbol" class="logo-image">
+            <span class="logo-text">CLUB DEPORTIVO CB</span>
+        </div>        
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#historia">Historia</a>
+            <a href="#categorias">Categorías</a>                        
+            <a href="#entrenadores">Equipo de Trabajo</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#padres">Padres De Familia</a>
+        </div>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <p>BIENVENIDOS A LA ESCUELA DE FUTBOL</p>
+            <h1>"FORMANDO PERSONAS INTEGRAS, DESPUÉS FUTBOLISTAS"</h1>
+        </div>
+    </section>
+
+    <!-- Barra de Estadísticas -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <h3><span id="years-xp"></span>+</h3>
+            <p>Años de Experiencia</p>
+        </div>
+        <div class="stat-item">
+            <h3>500+</h3>
+            <p>Alumnos Formados</p>
+        </div>
+    </div>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="reveal">
+        <div class="section-header">
+            <h2>NUESTRA FORMACIÓN</h2>
+        </div>
+        <div class="cards-container">
+            <div class="info-card">
+                <h3 style="text-align: center;">Promesa de Servicio</h3>
+                <p  class="texto-justificado">
+                    Nos comprometemos a brindarles a todos nuestros afiliados contribuyentes, jugadores  
+                    y  padres de familias, un servicio de calidad y pedagógico basado en principios del 
+                    entrenamiento deportivo, con el objetivo de brindarle un desarrollo integral a nuestros afiliados.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3 style="text-align: center;">¿Quiénes Somos?</h3>
+                <p class="texto-justificado">
+                    Somos un club deportivo enfocados en el desarrollo integral de nuestros niños y adolescentes,
+                    con el propósito de educar excelentes seres humanos y extraordinarios futbolistas. 
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3 style="text-align: center;">Misión</h3>
+                <p class="texto-justificado">
+                    Contribuir en el desarrollo integral de nuestros jugadores, con el propósito de mejorar su 
+                    calidad de vida  a través del futbol , la recreación, el aprovechamiento del tiempo libre y 
+                    actividades lúdicas dirigidas hacia una formación integral.
+                </p>
+            </div>   
+
+            <div class="info-card">
+                <h3 style="text-align: center;">Visión</h3>
+                <p class="texto-justificado">
+                    Para el año 2030 ser una organización reconocida a nivel municipal y departamental como formadora
+                    de futbolistas íntegros que aporte al crecimiento cultural, social y educativo de nuestro país.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3 style="text-align: center;">Metodología</h3>
+                <p class="texto-justificado">
+                    La enseñanza de nuestro club es participativa, analítica e integral. Basada en situaciones parecidas a la competencia:
+                </p><br>
+                <ul class="lista-futbol">
+                        <li>Físico</li>
+                        <li>Técnico</li>
+                        <li>Táctico</li>
+                        <li>Psicológico</li>
+                        <li>Social</li>                        
+                </ul>                        
+            </div>
+
+            <div class="info-card">
+                <h3 style="text-align: center;">Valores</h3>
+                    <ul class="lista-futbol">
+                        <li>Inclusión, equidad e integración</li>
+                        <li>Respeto</li>
+                        <li>Responsabilidad</li>
+                        <li>Convivencia</li>
+                        <li>Amistad</li>
+                        <li>Cooperación</li>
+                        <li>Perseverancia</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Sentido de pertenecia</li>
+                        <li>Juego limpio</li>
+                    </ul>
+            </div>              
+        </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="reveal">
+        <div class="section-header">
+            <h2>NUESTRA HISTORIA</h2>
+            <p class="texto-justificado"> El Club deportivo escuela de fútbol CRISTIAN BENITEZ, fue fundado el 14 de Septiembre del año 2013,
+                como un homenaje a un ex jugador de las inferiores de Atlético Junior de Barraquilla , que tuvo el
+                honor de compartir con grandes jugadores como Teófilo Gutiérrez , Carlos Bacca, Macnelly Torres, 
+                Vladimir Hernández, entres otros. El no pudo cumplir sus sueños de ser futbolista profesional. 
+                Sin embargo inicio este proyecto deportivo con el propósito de formar y potencializar niños, adolescentes
+                y jóvenes que quieren ser futbolistas.
+            </p>            
+        </div>
+        <div id="carousel-historia" class="carousel-wrapper">
+            <img src="img/historia/foto_1.jpeg" class="slide active" alt="Historia 1">
+            <img src="img/historia/foto_2.jpeg" class="slide" alt="Historia 2">
+            <img src="img/historia/foto_3.jpeg" class="slide" alt="Historia 3">
+            <img src="img/historia/foto_4.jpeg" class="slide" alt="Historia 4">
+            <img src="img/historia/foto_5.jpeg" class="slide" alt="Historia 5">
+            <img src="img/historia/foto_6.jpeg" class="slide" alt="Historia 6">
+            <img src="img/historia/foto_7.jpeg" class="slide" alt="Historia 7">   
+            <img src="img/historia/foto_8.jpeg" class="slide" alt="Historia 8">
+            <img src="img/historia/foto_9.jpeg" class="slide" alt="Historia 1">                             
+            <div class="carousel-nav" id="nav-historia">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>                                                
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section id="categorias" class="reveal">
+        <div class="section-header">
+            <h2>CATEGORÍAS</h2>
+        </div>
+        <div class="cards-container">
+            <div class="categ-card">
+                <img src="img/cat_4_6.jpg" alt="categoria 4 a 6" class="categ-img">
+                <div class="categ-info">
+                    <h3>Estimulación: (4 a 6 Años)</h3>
+                    <ul class="lista-futbol">
+                        <li>Psicomotricidad</li>
+                        <li>Juegos</li>
+                        <li>Fútbol recreativo</li>
+                        <li>Actividades lúdicas</li>
+                        <li>Cuentos de futbol adaptados</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="categ-card">
+                <img src="img/cat_7_8.jpg" alt="categoria 7 a 8" class="categ-img">
+                <div class="categ-info">
+                    <h3>Pre-iniciación: (7 a 8 Años)</h3>
+                    <ul class="lista-futbol">
+                        <li>Futbol 7</li>
+                        <li>Coordinación motriz</li>
+                        <li>Actividades recreo deportivas</li>
+                        <li>Iniciación hacia el futbol formativo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="categ-card">
+                <img src="img/cat_9_10" alt="categoria 9 a 10" class="categ-img">
+                <div class="categ-info">
+                    <h3>Iniciación:(9 a 10 Años)</h3>
+                    <ul class="lista-futbol">
+                        <li>Futbol 9</li>
+                        <li>Charlas psicosociales</li>
+                        <li>Fundamentación técnica</li>
+                        <li>Juegos aplicados al futbol</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="categ-card">
+                <img src="img/cat_11_12" alt="categoria 11 a 12" class="categ-img">
+                <div class="categ-info">
+                    <h3>Infantil:(11 a 12 Años)</h3>
+                    <ul class="lista-futbol">
+                        <li>Futbol 11</li>
+                        <li>Fundamentación técnica</li>
+                        <li>Charlas Psicosociales</li>
+                        <li>Principios tácticos básicos</li>
+                        <li>Preparación física con balón</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="categ-card">
+                <img src="img/cat_13_14" alt="categoria 13 a 14" class="categ-img">
+                <div class="categ-info">
+                    <h3>Pre-Juvenil:(13 a 14 Años)</h3>
+                    <ul class="lista-futbol">
+                        <li>Futbol 11</li>
+                        <li>Charlas</li>
+                        <li>Técnica</li>
+                        <li>Táctica</li>
+                        <li>Socio-afectivo</li>
+                        <li>Microciclo estructurado</li>                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="categ-card">
+                <img src="img/cat_15_16" alt="categoria 15 a 16" class="categ-img">
+                <div class="categ-info">
+                    <h3>Juvenil:(15 a 17 Años)</h3>
+                    <ul class="lista-futbol">
+                        <li>Futbol 11</li>
+                        <li>Táctica</li>
+                        <li>Socio-Afectivo</li>
+                        <li>Charlas-Videos</li>
+                        <li>Técnica especifica</li>
+                        <li>Microciclo estructurado</li>
+                        <li>Preparación física ( Estaciones)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entrenadores -->
+    <section id="entrenadores" class="reveal">
+        <div class="section-header">
+            <h2>EQUIPO DE TRABAJO</h2>
+        </div>
+        <div class="entrenador-container">
+            <div class="entrenador-card">
+                <img src="img/entrenador_1.jpeg" alt="Profesional_1" class="entrenador-img">
+                <div class="entrenador-info">
+                    <h3>Cristian Camilo Benitez Bastida</h3>
+                    <span>Técnico en entrenamiento deportivo</span>
+                </div>
+            </div>
+
+            <div class="entrenador-card">
+                <img src="img/entrenador_2.jpg" alt="Profesional_2" class="entrenador-img">
+                <div class="entrenador-info">
+                    <h3>Luis Gabriel Guerra Navarro</h3>
+                    <span>Profesional en ciencias del deporte</span>
+                </div>
+            </div>
+
+            <div class="entrenador-card">
+                <img src="img/entrenador_25.jpg" alt="Profesional_3" class="entrenador-img">
+                <div class="entrenador-info">
+                    <h3>Cesar Luis Cuello</h3>
+                    <span>Auxiliar de entrenamiento</span>
+                </div>
+            </div>
+
+            <div class="entrenador-card">
+                <img src="img/entrenador_25.jpg" alt="Profesional_4" class="entrenador-img">
+                <div class="entrenador-info">
+                    <h3>Sebastian Rivera Yepes</h3>
+                    <span>Auxiliar de entrenamiento</span>
+                </div>
+            </div>   
+
+            <div class="entrenador-card">
+                <img src="img/entrenador_25.jpg" alt="Profesional_5" class="entrenador-img">
+                <div class="entrenador-info">
+                    <h3>Maria Coronado Rivera</h3>
+                    <span>Auxiliar de entrenamiento</span>
+                </div>
+            </div>
+            
+            <div class="entrenador-card">
+                <img src="img/entrenador_6.jpeg" alt="Profesional_6" class="entrenador-img">
+                <div class="entrenador-info">
+                    <h3>Carmen Ramos Atencia</h3>
+                    <span>Auxiliar Contable</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="reveal">
+        <div class="section-header">
+            <p>Momentos Inolvidables</p>
+            <h2>NUESTRA GALERÍA</h2>
+        </div>
+        <div id="carousel-galeria" class="carousel-wrapper">
+            <img src="img/galeria/foto_1.jpeg" class="slide active" alt="galeria_1">
+            <img src="img/galeria/foto_2.jpeg" class="slide" alt="galeria_2">
+            <img src="img/galeria/foto_3.jpeg" class="slide" alt="galeria_3">
+            <img src="img/galeria/foto_4.jpeg" class="slide" alt="galeria_4">
+            <img src="img/galeria/foto_5.jpeg" class="slide" alt="galeria_5">
+            <img src="img/galeria/foto_6.jpeg" class="slide" alt="galeria_6">
+            <img src="img/galeria/foto_7.jpeg" class="slide" alt="galeria_7">
+            <img src="img/galeria/foto_8.jpeg" class="slide" alt="galeria_8">
+            <img src="img/galeria/foto_9.jpeg" class="slide" alt="galeria_9">
+            <img src="img/galeria/foto_10.jpeg" class="slide" alt="galeria_10">
+            <div class="carousel-nav" id="nav-galeria">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Padres -->
+    <section id="padres" class="reveal">
+        <div class="section-header">
+            <h2>NUESTROS PADRES DE FAMILIA</h2>
+            <p class="texto-justificado">
+                El Club Deportivo Escuela de Fútbol CRISTIAN BENÍTEZ invita a todos los padres de familia a ser
+                parte fundamental del proceso formativo de sus hijos.
+                Su rol es clave: Acompañar, motivar y supervisar con respeto, confianza y compromiso.
+                Apoyando cada paso del camino, respetando las decisiones de entrenadores, directivos, jueces arbitrales
+                y rivales, formando no solo mejores jugadores… sino mejores personas.<br>
+            </p>      
+            <p class="texto-center">"Porque el verdadero éxito no solo se mide en goles, sino en valores"</p>       
+        </div>
+        <div id="carousel-padres" class="carousel-wrapper">
+            <img src="img/galeria/foto_1.jpeg" class="slide active" alt="galeria_1">
+            <!-- <video src="img/galeria/video_1.mp4" class="slide" muted loop playsinline></video> -->
+            <video src="videos/video_1.mp4" class="slide" muted playsinline controls></video>                                    
+            <div class="carousel-nav" id="nav-padres">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <!-- <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>  -->
+            </div>
+        </div>
+    </section>    
+    
+    <!-- Reglamento -->
+    <section id="reglamento" class="reveal">
+        <div class="reglamento-hero">
+            <div class="reglamento-text">
+                <h2>Reglamento Interno 2026</h2>
+                <p>Consulta la normativa oficial para el cumplimiento de los objetivos deportivos de esta temporada.</p>
+            </div>
+            <a src="reglamento/reglamento_1.pdf" class="download-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                VER REGLAMENTO
+            </a>
+        </div>
+    </section>
+
+    <!-- Botones Flotantes -->
+    <div class="floating-container">
+        <!-- Reglamento -->
+        <a href="#reglamento" class="fab-button fab-reglamento" data-label="Reglamento Interno">
+            <svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M16,11V13H8V11H16M16,15V17H8V15H16Z" /></svg>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/573000000000" target="_blank" class="fab-button fab-whatsapp" data-label="Chat de WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.006.332.013c.101.007.237-.038.371.29.134.328.462 1.126.502 1.207.041.081.068.175.012.285-.056.11-.104.187-.207.306-.104.12-.218.267-.312.359-.104.103-.211.214-.091.42.12.206.533.879 1.143 1.42.787.697 1.446.914 1.652 1.012.206.098.327.081.448-.058.12-.139.519-.606.657-.814.139-.208.277-.174.462-.104.186.071 1.177.555 1.38.657s.336.154.385.239c.049.084.049.49-.095.895zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        </a>
+
+        <!-- Inscripciones -->
+        <a href="https://docs.google.com/forms/d/1CXVLxWmj4tgS_PUqgB0_7YPCltWoEp-f5J0wuaNn_g4/viewform" target="_blank" class="fab-button fab-inscripcion" data-label="¡Inscríbete Aquí!">
+            <svg viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
+        </a>
+    </div>    
+
+    <!-- Píe de página -->
+    <footer class="main-footer">
+        <div class="footer-logo">CLUB DEPORTIVO ESCUELA CB</div>
+        <div class="footer-text">
+            <p>Días de Entrenamientos</p>
+            <p>Lunes, Miercoles y Viernes de 3:00 PM a 6:00 PM</p>
+            <p>Lugar: Estadio Sintético Municipal</p>
+        </div>
+        <div class="social-container">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="social-button btn-facebook">
+                <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="social-button btn-instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c.796 0 1.441.645 1.441 1.44s-.645 1.44-1.441 1.44c-.795 0-1.439-.645-1.439-1.44s.644-1.44 1.439-1.44z"/></svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/573000000000" target="_blank" class="social-button btn-whatsapp">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+        </div>
+        <div class="copyright-section">
+            &copy; 2026 Club Deportivo Escuela CB. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Lógica (JS) -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+/* --- ESTILOS (CSS) --- */
+:root {
+    --rojo: #d62828;
+    --azul-oscuro: #1d3557;
+    --negro: #0d131d;
+    --dorado: #c5a059;
+    --blanco: #ffffff;
+    --gris-fondo: #f1f5f9;
+    --shadow: 0 15px 35px rgba(0,0,0,0.1);
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--gris-fondo);
+    color: var(--azul-oscuro);
+    overflow-x: hidden;
+}
+
+/* Navegación */
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    transition: var(--transition);
+    z-index: 1000;
+    color: white;
+}
+
+nav.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 8%;
+    box-shadow: var(--shadow);
+    color: var(--negro);
+    backdrop-filter: blur(10px);
+}
+
+/* Estilos para el contenedor del logo */
+.logo-box {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Estilos para la nueva imagen del logo */
+.logo-image {
+    height: 60px; /* Ajusta la altura a tu gusto, 60px es un buen tamaño para un navbar */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 15px; /* Espacio entre el escudo y el texto */
+    vertical-align: middle;
+}
+
+/* Estilos para el texto del logo (opcional, para mayor control) */
+.logo-text {
+    vertical-align: middle;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.menu a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.menu a:hover {
+    color: var(--rojo);
+}
+
+/* Sección Principal */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(13, 19, 29, 0.6), rgba(13, 19, 29, 0.8)), 
+                /* url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat; */
+                url('img/principal.avif') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 5%;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-weight: 900;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+.cta-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estadísticas */
+.stats-bar {
+    background: white;
+    max-width: 1100px;
+    margin: -60px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--rojo);
+    font-weight: 900;
+}
+
+.stat-item p {
+    color: #64748b;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Secciones Generales */
+section {
+    padding: 100px 8%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.section-header p {
+/* 1. Cambiamos el color a un gris muy oscuro o azul marino profundo */
+    color: #1a202c; 
+    
+    /* 2. Bajamos el grosor (700 es muy pesado para párrafos largos) */
+    font-weight: 500; 
+    
+    /* 3. Quitamos las mayúsculas forzadas para facilitar la lectura */
+    text-transform: none; 
+    
+    /* 4. Ajustamos el espaciado y tamaño para que sea profesional */
+    letter-spacing: 0.5px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 800px; /* Evita que las líneas sean infinitas en pantallas anchas */
+    margin: 0 auto;   /* Centra el bloque de texto */    
+}
+
+/* Tarjetas */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+}
+
+.info-card h3 {
+    /* color: var(--rojo);
+    margin-bottom: 15px; */
+    color: #B22222; /* Un rojo "Firebrick" más elegante, no tan chillón */
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #eeeeee; /* Una línea sutil para separar */
+    padding-bottom: 10px;    
+}
+
+.categ-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.categ-card:hover { transform: translateY(-10px); }
+.categ-img { width: 100%; height: 350px; object-fit: cover; }
+.categ-info { padding: 30px; text-align: center; }
+.categ-info h3 { margin-bottom: 5px; }
+.categ-info span {
+     /* color: var(--rojo); font-weight: 600; display: block; margin-bottom: 10px;  */
+/* Cambiamos el rojo por un azul marino elegante */
+    color: #1a365d; 
+    font-weight: 700; /* Un poco más de peso para compensar el cambio de color */
+    display: block; 
+    margin-bottom: 10px;
+    letter-spacing: 1px; /* Un pequeño espacio entre letras da un toque de clase */
+    text-transform: uppercase; /* Si quieres que destaque como categoría */     
+}
+
+/*Tarjeta entrenadores*/
+
+.entrenador-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.entrenador-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.entrenador-card:hover { transform: translateY(-10px); }
+.entrenador-img { 
+    width: 100%;
+    aspect-ratio: 4 / 5; /* Esto mantiene la proporción sin importar el ancho */
+    object-fit: cover;
+    object-position: center;
+}
+.entrenador-info { padding: 30px; text-align: center; }
+.entrenador-info h3 { margin-bottom: 5px; }
+.entrenador-info span { color: var(--rojo); font-weight: 600; display: block; margin-bottom: 10px; }
+
+/* Galería */
+
+/* Asegúrate de añadir esto para el contenedor de los puntos */
+.carousel-nav {
+    position: absolute;
+    bottom: 20px;    /* Los separa 20px del borde inferior */
+    left: 50%;       /* Los centra horizontalmente */
+    transform: translateX(-50%); /* Ajuste perfecto del centrado */
+    display: flex;   /* Para que los puntos estén uno al lado del otro */
+    gap: 10px;       /* Espacio entre puntos */
+    z-index: 10;     /* Los pone por encima de las imágenes */
+}
+
+.carousel-wrapper {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 550px;
+    box-shadow: var(--shadow);
+    object-fit: cover; /* Esto evita que el video se estire feo */    
+}
+
+.slide {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;      /* Forzamos a que ocupe todo el alto del contenedor */
+    object-fit: cover; /* Evita que la foto se estire feo */
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1; /* La imagen activa queda debajo de los puntos pero visible */
+    display: block;
+}
+
+/* Tus estilos de los dots están perfectos, solo asegúrate de que tengan fondo */
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Para que el cambio de tamaño sea suave */
+}
+
+.dot.active { 
+    background: white; 
+    width: 30px; 
+    border-radius: 10px; 
+}
+
+/* Reglamento */
+.reglamento-hero {
+    background: var(--azul-oscuro);
+    border-radius: 30px;
+    padding: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.download-btn {
+    background: var(--dorado);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+}
+
+.download-btn:hover { background: #b08d4a; }
+
+/* Animaciones Scroll */
+.reveal { opacity: 0; transform: translateY(40px); transition: 0.8s all ease; }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+    .menu { display: none; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .reglamento-hero { text-align: center; justify-content: center; }
+    .stats-bar { padding: 20px; margin-top: -40px; }
+}
+
+.texto-justificado {
+    text-align: justify;
+    line-height: 1.6;
+    /* Esta línea es la clave para quitar las mayúsculas forzadas */
+    text-transform: none !important; 
+    
+    /* Opcional: asegura que el color sea legible sobre el fondo */
+    color: #333; 
+    font-size: 1.1rem;
+}
+
+
+.separador-objetivos {
+    height: 1px;
+    background: #ddd;
+    margin: 25px 0;
+}
+
+.lista-futbol {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-futbol li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.lista-futbol li::before {
+    content: "⚽";
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+/* --- ESTILOS DEL FOOTER --- */
+.main-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 20px 30px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 4px solid #f1c40f;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f1c40f;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    color: #cccccc;
+    margin-bottom: 30px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.social-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.social-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Icono SVG */
+.social-button svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+/* Efectos de color por red social */
+.social-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn-facebook:hover { background-color: #1877F2; }
+.btn-instagram:hover { background-color: #E1306C; }
+.btn-whatsapp:hover { background-color: #25D366; }
+
+.copyright-section {
+    width: 100%;
+    max-width: 800px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+
+/* --- CONTENEDOR DE BOTONES FLOTANTES (FAB) --- */
+.floating-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 2000;
+}
+
+.fab-button {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Tooltip (Etiqueta de texto al pasar el mouse) */
+.fab-button::before {
+    content: attr(data-label);
+    position: absolute;
+    right: 70px;
+    background-color: #333;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.fab-button:hover::before {
+    opacity: 1;
+}
+
+.fab-button:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Colores específicos */
+.fab-reglamento {
+    background-color: #34495e;
+}
+
+.fab-whatsapp {
+    background-color: #25D366;
+}
+
+.fab-inscripcion {
+    background-color: #f1c40f;
+    color: #1a1a1a;
+}
+
+.fab-button svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor;
+}
+
+video.slide {
+    object-fit: contain; /* Muestra el video completo sin cortarlo */
+    background: black;   /* Añade barras negras si el video es más flaco que el carrusel */
+}
+
+/*Anuncios*/
+
+/* Fondo oscuro detrás del anuncio */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Oscurece la web */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* La tarjeta del anuncio */
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff4757;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Clase para ocultar */
+.hidden { display: none; }
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
